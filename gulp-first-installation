@@ -1,0 +1,8 @@
+global --> for windows{
+
+  powerShell as administrator
+
+  1) Set-ExecutionPolicy RemoteSigned
+  2) npm install --global gulp-cli
+
+}
