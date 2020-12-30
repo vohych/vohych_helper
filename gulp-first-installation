@@ -4,5 +4,9 @@ global --> for windows{
 
   1) Set-ExecutionPolicy RemoteSigned
   2) npm install --global gulp-cli
-
+  3) create project
+  4) inside project --> terminal:[npm init]
+  
 }
+
+
