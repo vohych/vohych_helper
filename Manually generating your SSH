@@ -20,7 +20,7 @@
 # Your public key is saved to the id_rsa.pub; file and is the key you upload to your server. You can save this key to the clipboard by running this:
 ==> pbcopy < ~/.ssh/id_rsa.pub
 #
-# location files: 
+# files location: 
 # (local computer) ~/.ssh/id_rsa.pub - copy inside key
 # (server) ~/.ssh/authorized_key -- inser key of id_rsa.pub
 #
