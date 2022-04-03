@@ -1,22 +1,26 @@
+++My expirience OSX(M1) to remoute Ubuntu server++
 ### ==> [command] - is coman line;
 #
-#To generate SSH keys in macOS, follow these steps:
+# To generate SSH keys in macOS, follow these steps:
 #
-#Enter the following command in the Terminal window.
+# Enter the following command in the Terminal window.
 #
-==> sh-keygen -t rsa
+==> ssh-keygen
 #
-#This starts the key generation process. When you execute this command, the ssh-keygen utility prompts you to indicate where to store the key.
+# This starts the key generation process. When you execute this command, the ssh-keygen utility prompts you to indicate where to store the key.
 #
-#Press the ENTER key to accept the default location. The ssh-keygen utility prompts you for a passphrase.
+# Press the ENTER key to accept the default location. The ssh-keygen utility prompts you for a passphrase.
 #
-#Type in a passphrase. You can also hit the ENTER key to accept the default (no passphrase). However, this is not recommended.
-#
-#
-Your private key is saved to the id_rsa file in the .ssh directory and is used to verify the public key you use belongs to the same Triton Compute Service account.
+# Type in a passphrase. You can also hit the ENTER key to accept the default (no passphrase). However, this is not recommended.
 #
 #
+# Your private key is saved to the id_rsa file in the .ssh directory and is used to verify the public key you use belongs to the same server.
 #
-Your public key is saved to the id_rsa.pub;file and is the key you upload to your server. You can save this key to the clipboard by running this:
+#
+# Your public key is saved to the id_rsa.pub; file and is the key you upload to your server. You can save this key to the clipboard by running this:
 ==> pbcopy < ~/.ssh/id_rsa.pub
-
+#
+# location files: 
+# (local computer) ~/.ssh/id_rsa.pub - copy inside key
+# (server) ~/.ssh/authorized_key -- inser key of id_rsa.pub
+#
