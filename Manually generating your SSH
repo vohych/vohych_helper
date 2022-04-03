@@ -1,0 +1,22 @@
+### ==> [command] - is coman line;
+#
+#To generate SSH keys in macOS, follow these steps:
+#
+#Enter the following command in the Terminal window.
+#
+==> sh-keygen -t rsa
+#
+#This starts the key generation process. When you execute this command, the ssh-keygen utility prompts you to indicate where to store the key.
+#
+#Press the ENTER key to accept the default location. The ssh-keygen utility prompts you for a passphrase.
+#
+#Type in a passphrase. You can also hit the ENTER key to accept the default (no passphrase). However, this is not recommended.
+#
+#
+Your private key is saved to the id_rsa file in the .ssh directory and is used to verify the public key you use belongs to the same Triton Compute Service account.
+#
+#
+#
+Your public key is saved to the id_rsa.pub;file and is the key you upload to your server. You can save this key to the clipboard by running this:
+==> pbcopy < ~/.ssh/id_rsa.pub
+
